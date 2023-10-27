@@ -58,11 +58,6 @@ function App() {
 }
 
 function Header() {
-  //   const style = {
-  //     color: "#008080",
-  //     fontSize: "40px",
-  //     textTransform: "uppercase",
-  //   };
   const style = {};
   return (
     <header className="header">
@@ -80,6 +75,16 @@ function Menu() {
   );
 }
 
+function Pizza() {
+  return (
+    <div>
+      <img src="pizzas/margherita.jpg" alt="Pizza margherita"></img>
+      <h3>Pizza Margherita</h3>
+      <p>Tomato and mozarella</p>
+    </div>
+  );
+}
+
 function Footer() {
   const hour = new Date().getHours();
   const openHour = 10;
@@ -93,16 +98,6 @@ function Footer() {
     <footer className="footer">
       {new Date().toLocaleTimeString()}. We're currently open
     </footer>
-  );
-}
-
-function Pizza() {
-  return (
-    <div>
-      <img src="pizzas/margherita.jpg" alt="Pizza margherita"></img>
-      <h3>Pizza Margherita</h3>
-      <p>Tomato and mozarella</p>
-    </div>
   );
 }
 
